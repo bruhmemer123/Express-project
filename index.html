@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Concert Booking</title>
+          <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+        <div class="card">
+            <img src="concert.png">
+            <div class="title">Travis Scott Concert
+            </div>
+            <div class="details">
+                <p>Date:- 18th Feb,2026</p>
+                <p>Time:- 07:00pm</p>
+                <p>Venue:- Opera House, Sydney, Australia</p>
+                <p>Price:- $300</p>
+            </div>
+            <div class="ticket-columns">
+                <p>Tickets Booked:<span id="booked">0</span></p>
+                <p>Tickets Remaining:<span id="tickets">50</span></p>
+            </div>
+            <button class="button" id="button" onclick="ticket_booked()">Book ticket!</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

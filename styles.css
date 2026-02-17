@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+.video-background video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100; 
+  object-fit: cover;
+}
+
+.card{
+    background-color: rgb(108, 108, 108);
+    border-style: solid;
+    border-color: rgb(156, 156, 156);
+    border-radius: 15px;
+    height: auto;
+    width: clamp(400px,40%,600px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+.card > img{
+    width:100%;
+    border-radius: 15px;
+}
+.title{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    width: 100%;
+}
+.details > p {
+    margin: 0;
+    font-size: 25px;
+    text-align: center;
+}
+.button {
+    background-color: yellow;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 25px;
+}
+.ticket-columns{
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+}
+.button:hover{
+    background-color: black;
+    color: yellow;
+}
+.button:disabled{
+    background-color: rgb(232, 0, 0);
+    color: black;
+}
+.button:disabled:hover{
+    background-color: rgb(232, 0, 0);
+    color: black;
+}
